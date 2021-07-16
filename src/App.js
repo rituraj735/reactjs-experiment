@@ -37,10 +37,12 @@ function App() {
   ]);
   return (
     <>
-      <Header title="Hi Bye" searchBar={false} />
-      <AddTodos addTodos={addTodos} />
-      <Todos todo={todos} onDelete={onDelete} />
-      <Footer />
+      <Router>
+        <Header title="Hi Bye" searchBar={false} />
+        <AddTodos addTodos={addTodos} />
+        <Todos todo={todos} onDelete={onDelete} />
+        <Footer />
+      </Router>
     </>
   );
 }
